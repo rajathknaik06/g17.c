@@ -28,8 +28,8 @@ The second line prints the number of hours Justin has worked during the weekends
 int main()
 {
     int sal,h;
-    scanf("%d",&sal);
-    h=(sal-800)/130;
-    printf("Number of weekday hours is %d\nNumber of weekend hours is %d",h+10,h);     //2750
+    scanf("%d",&sal);                //80(h+10)+50h      800+130h to solve h take everything to left side
+    h=(sal-800)/130;                 //2630-800/130= 14       //14+10=24        //weekday hours 24  and weekend hours 14
+    printf("Number of weekday hours is %d\nNumber of weekend hours is %d",h+10,h);     //2630  //h+10 means extra work on weakends
     return 0;
 }
